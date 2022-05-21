@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+
+}
+.form-container{
+    flex:5;
+}
+.banner-container{
+    flex:3;
+    width: 40%;
+    height: 100vh;
+   color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: url("clg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}

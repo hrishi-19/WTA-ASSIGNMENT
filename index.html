@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Document</title>
+    <style>
+        textarea{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="form-container">
+        <form name="admission">
+            <h3>Personal details</h3>
+            <label for="first_name">FIRST NAME:</label>
+            <input type="text" id="first_name" required>
+            <label for="last_name">LAST NAME:</label>
+            <input type="text" id="last_name" required>
+            <br>
+            <label for="DOB">DATE OF BIRTH:</label>
+            <input type="date" required>
+            <label for="mobile">Mobile:</label>
+            <input type="number" required>
+            <br>
+            <label for="address">Address:</label>
+            <textarea rows="10" cols="35"  required></textarea>
+            <label for="lang">Mother Tongue:</label>
+            <input type="text">
+            <h3>Family details</h3>
+            <label for="father_name">Father NAME:</label>
+            <input type="text" id="father_name" required>
+            <label for="f_oc">Occupation:</label>
+            <input type="text" id="f_oc" required>
+            <br>
+            <label for="mother_name">Mother NAME:</label>
+            <input type="text" id="mother_name" required>
+            <label for="m_oc">Occupation:</label>
+            <input type="text" id="m_oc" required>
+            <br>
+            <label for="income"> Annual Family Income:</label>
+            <input type="text" id="income" required>
+            <h3>Academic details</h3>
+            <h4>Class 10</h4>
+            <label for="s_clg">School name:</label>
+            <input type="text" id="s_clg" required>
+            <label for="s_type">Board:</label>
+            <select id="s_type">
+                <option value="CBSE">CBSE</option>
+                <option value="STATE">STATE</option>
+                <option value="ICSE">ICSE</option>
+            </select>
+            <br>
+            <label for="s_perc">Percentage:</label>
+            <input type="text" id="s_perc">
+            <label for="s_date">Year:</label>
+            <input type="date" id="s_date">
+            <br>
+            <h4>class 12</h4>
+            <label for="p_clg">College name:</label>
+            <input type="text" id="p_clg" required>
+            <label for="p_type">Board:</label>
+            <select id="p_type">
+                <option value="CBSE">CBSE</option>
+                <option value="STATE">STATE</option>
+                <option value="ICSE">ICSE</option>
+            </select>
+            <br>
+            <label for="p_perc">Percentage:</label>
+            <input type="text" id="p_perc">
+            <label for="p_date">Year:</label>
+            <input type="date" id="p_date">
+            <h3>Entrance exam details</h3>
+            <label for="cet_rank">CET RANK:</label>
+            <input type="number" id="cet_rank">
+            <label for="cat">Category:</label>
+            <select>
+                <option value=""></option>
+            </select>
+            <br>
+            <label for="dat">Date of Admission:</label>
+            <input type="date">
+            <br>
+            <label for="awards">Awards:</label>
+            <textarea cols="30" rows="5" id="awards"></textarea>
+            <br>
+            <label for="hobby">Hobbies:</label>
+            <textarea cols="30" rows="5" id="hobby" ></textarea>
+            <br>
+            <input type="button" value="Reset">
+            <input type="submit" value="submit">
+        </form>
+       </div>
+       <div class="banner-container">
+            <h2>Admission form</h2>
+            <div class="img-cover">
+
+            </div>
+       </div>
+   </div>
+</body>
+</html>
