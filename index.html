@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,100 +8,189 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>Document</title>
     <style>
-        textarea{
+        textarea {
             resize: none;
         }
     </style>
 </head>
-<body>
-   <div class="container">
-       <div class="form-container">
-        <form name="admission">
-            <h3>Personal details</h3>
-            <label for="first_name">FIRST NAME:</label>
-            <input type="text" id="first_name" required>
-            <label for="last_name">LAST NAME:</label>
-            <input type="text" id="last_name" required>
-            <br>
-            <label for="DOB">DATE OF BIRTH:</label>
-            <input type="date" required>
-            <label for="mobile">Mobile:</label>
-            <input type="number" required>
-            <br>
-            <label for="address">Address:</label>
-            <textarea rows="10" cols="35"  required></textarea>
-            <label for="lang">Mother Tongue:</label>
-            <input type="text">
-            <h3>Family details</h3>
-            <label for="father_name">Father NAME:</label>
-            <input type="text" id="father_name" required>
-            <label for="f_oc">Occupation:</label>
-            <input type="text" id="f_oc" required>
-            <br>
-            <label for="mother_name">Mother NAME:</label>
-            <input type="text" id="mother_name" required>
-            <label for="m_oc">Occupation:</label>
-            <input type="text" id="m_oc" required>
-            <br>
-            <label for="income"> Annual Family Income:</label>
-            <input type="text" id="income" required>
-            <h3>Academic details</h3>
-            <h4>Class 10</h4>
-            <label for="s_clg">School name:</label>
-            <input type="text" id="s_clg" required>
-            <label for="s_type">Board:</label>
-            <select id="s_type">
-                <option value="CBSE">CBSE</option>
-                <option value="STATE">STATE</option>
-                <option value="ICSE">ICSE</option>
-            </select>
-            <br>
-            <label for="s_perc">Percentage:</label>
-            <input type="text" id="s_perc">
-            <label for="s_date">Year:</label>
-            <input type="date" id="s_date">
-            <br>
-            <h4>class 12</h4>
-            <label for="p_clg">College name:</label>
-            <input type="text" id="p_clg" required>
-            <label for="p_type">Board:</label>
-            <select id="p_type">
-                <option value="CBSE">CBSE</option>
-                <option value="STATE">STATE</option>
-                <option value="ICSE">ICSE</option>
-            </select>
-            <br>
-            <label for="p_perc">Percentage:</label>
-            <input type="text" id="p_perc">
-            <label for="p_date">Year:</label>
-            <input type="date" id="p_date">
-            <h3>Entrance exam details</h3>
-            <label for="cet_rank">CET RANK:</label>
-            <input type="number" id="cet_rank">
-            <label for="cat">Category:</label>
-            <select>
-                <option value=""></option>
-            </select>
-            <br>
-            <label for="dat">Date of Admission:</label>
-            <input type="date">
-            <br>
-            <label for="awards">Awards:</label>
-            <textarea cols="30" rows="5" id="awards"></textarea>
-            <br>
-            <label for="hobby">Hobbies:</label>
-            <textarea cols="30" rows="5" id="hobby" ></textarea>
-            <br>
-            <input type="button" value="Reset">
-            <input type="submit" value="submit">
-        </form>
-       </div>
-       <div class="banner-container">
-            <h2>Admission form</h2>
-            <div class="img-cover">
 
-            </div>
-       </div>
-   </div>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form name="admission">
+                <h3>Personal details</h3>
+                <div class="wrapper">
+                    <div class="input_wrapper">
+                        <label for="first_name">FIRST NAME:</label>
+                        <input type="text" id="first_name" class="box" required>
+                    </div>
+                    <div class="input_wrapper">
+                        <label for="last_name">LAST NAME:</label>
+                        <input type="text" id="last_name" class="box" required>
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="input_wrapper">
+                        <label for="DOB">DATE OF BIRTH:</label>
+                        <input type="date" required class="box" value="2022-05-12">
+                    </div>
+                    <div class="input_wrapper">
+                        <label for="mobile">MOBILE:</label>
+                        <input type="number" required class="box">
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="input_wrapper">
+                        <label for="address">ADDRESS:</label>
+                        <textarea rows="10" cols="35" required></textarea>
+                    </div>
+                    <div class="input_wrapper">
+                        <label for="lang">LANGUAGE:</label>
+                        <input type="text" class="box">
+                    </div>
+                </div>
+                <h3>Family details</h3>
+                <div class="wrapper">
+                    <div class="input_wrapper">
+                        <label for="father_name">FATHER NAME:</label>
+                        <input type="text" id="father_name" required class="box">
+                    </div>
+                    <div class="input_wrapper">
+                        <label for="f_oc">OCCUPATION:</label>
+                        <input type="text" id="f_oc" required class="box">
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="input_wrapper">
+                        <label for="mother_name">MOTHER NAME:</label>
+                        <input type="text" id="mother_name" required class="box">
+                    </div>
+                    <div class="input_wrapper">
+                        <label for="m_oc">OCCUPATION:</label>
+                        <input type="text" id="m_oc" required class="box">
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="input_wrapper">
+                        <label for="income"> ANNUAL INCOME:</label>
+                        <input type="text" id="income" required>
+                    </div>
+                </div>
+                <h3>Academic details</h3>
+                <h4>Class 10</h4>
+                <div class="wrapper">
+                    <div class="input_wrapper">
+                        <label for="s_clg">SCHOOL NAME:</label>
+                        <input type="text" id="s_clg" required class="box">
+                    </div>
+                    <div class="input_wrapper">
+                        <label for="s_type">BOARD:</label>
+                        <select id="s_type" class="box">
+                            <option value="CBSE">CBSE</option>
+                            <option value="STATE">STATE</option>
+                            <option value="ICSE">ICSE</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="input_wrapper">
+                        <label for="s_perc">GRADE:</label>
+                        <input type="text" id="s_perc" class="box">
+                    </div>
+                    <div class="input_wrapper">
+                        <label for="s_date">YEAR:</label>
+                        <input type="date" id="s_date" class="box">
+                    </div>
+                </div>
+
+                <h4>Class 12</h4>
+                <div class="wrapper">
+                    <div class="input_wrapper">
+                        <label for="p_clg">COLLEGE NAME:</label>
+                        <input type="text" id="p_clg" required class="box">
+                    </div>
+                    <div class="input_wrapper">
+                        <label for="p_type">BOARD:</label>
+                        <select id="p_type" class="box">
+                            <option value="CBSE">CBSE</option>
+                            <option value="STATE">STATE</option>
+                            <option value="ICSE">ICSE</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="input_wrapper">
+                        <label for="p_perc">GRADE:</label>
+                        <input type="text" id="p_perc" class="box">
+                    </div>
+                    <div class="input_wrapper">
+                        <label for="p_date">YEAR:</label>
+                        <input type="date" id="p_date" class="box" value="2022-05-12">
+                    </div>
+                </div>
+                <h4>Entrance exam details</h4>
+                <div class="wrapper">
+                    <div class="input_wrapper">
+                        <label for="p_perc">CET RANK:</label>
+                        <input type="number" id="p_perc" class="box">
+                    </div>
+                    <div class="input_wrapper">
+                        <label for="cat">CATEGORY:</label>
+                        <select class="box" id="cat">
+                            <option value="GEN">GENERAL</option>
+                            <option value="OBC">OBC</option>
+                            <option value="2A">2A</option>
+                            <option value="2B">2B</option>
+                            <option value="SC">SC</option>
+                            <option value="ST">ST</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <div class="wrapper">
+                    <div class="input_wrapper">
+                        <label for="awards">AWARDS:</label>
+                        <textarea cols="30" rows="10" id="awards" class="area"></textarea>
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="input_wrapper">
+                        <label for="hobby">HOBBIES:</label>
+                        <textarea cols="30" rows="10" id="hobby" class="area"></textarea>
+                    </div>
+                </div>
+
+                <div class="button-wrapper">
+                    <input type="button" value="RESET" class="reset">
+                    <input type="submit" value="SUBMIT" class="submit">
+                </div>
+            </form>
+        </div>
+        <div class="banner-container">
+            <div class="logo-cover"><img src="logo.png"></div>
+            <h2>
+                BMS INSTITUTE OF AND MANAGEMENT
+            </h2>
+            <h1>
+                ADMISSION APPLICATION
+            </h1>
+           <footer>
+            <p>
+                Avalahalli,Doddaballpura main road,<br> Yelahanaka,Bengaluru-560064
+            </p>
+           </footer>
+        </div>
+
+    </div>
 </body>
+
 </html>
